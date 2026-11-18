@@ -146,7 +146,7 @@ body { font-family: Tahoma, Arial, sans-serif; margin: 0; display: flex; flex-di
 </div>
 
 <div id="img-container">
-    <img id="page-img" src="صور_مستخرجة/صفحة_1.jpg">
+    <img id="page-img" src="صفحة_1.jpg">
 </div>
 
 <!-- نافذة الملاحظات -->
@@ -183,8 +183,9 @@ function goImg(n, btn) {
     var displayPage = Math.max(1, n - offset);
     document.getElementById('page-info').innerText = 'صفحة: ' + displayPage;
     document.getElementById('jump-input').value = displayPage;
+    
+    // تم ضبط مسار الصورة ليطابق أسماء الملفات المرفوعة بالرئيسية مباشرة
     document.getElementById('page-img').src = 'صفحة_' + n + '.jpg';
-
     document.getElementById('img-container').scrollTop = 0;
     
     // حفظ الصفحة الأخيرة تلقائياً
