@@ -183,7 +183,8 @@ function goImg(n, btn) {
     var displayPage = Math.max(1, n - offset);
     document.getElementById('page-info').innerText = 'صفحة: ' + displayPage;
     document.getElementById('jump-input').value = displayPage;
-    document.getElementById('page-img').src = 'صور_مستخرجة/صفحة_' + n + '.jpg';
+    document.getElementById('page-img').src = 'صفحة_' + n + '.jpg';
+
     document.getElementById('img-container').scrollTop = 0;
     
     // حفظ الصفحة الأخيرة تلقائياً
